@@ -16,6 +16,19 @@
   --footer-color: #2f303a;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Portfolio */
 body {
   background-color: var(--white-color);
@@ -105,10 +118,6 @@ a {
 
 /* index html */
 
-.hero {
-  background-color: var(--footer-color);
-}
-
 .hero h1 {
   color: var(--white-color);
 }
@@ -176,6 +185,10 @@ a {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 .team h3 {
   font-family: Roboto;
@@ -224,11 +237,104 @@ a {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-.section p {
+.team-items {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--secondly-text-color);
+}
+
+/* ------body-------- */
+
+/* ------header------ */
+
+.page-header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.nav-conteiner {
+  display: flex;
+}
+.auth-conteiner {
+  display: flex;
+}
+
+.nav-items:not(:last-child) {
+  margin-right: 50px;
+}
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.nav-conteiner {
+  margin-right: 331px;
+}
+
+.auth-items:not(:last-child) {
+  margin-right: 50px;
+}
+.conteiner-hero {
+  text-align: center;
+
+  background-color: var(--primary-text-color);
+}
+
+.h-hero {
+  margin-bottom: 30px;
+}
+
+.adv {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.adv-items {
+  width: 270px;
+}
+.adv-items:not(:last-child) {
+  margin-right: 30px;
+}
+.h-adv {
+  margin-bottom: 10px;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-items:not(:last-child) {
+  margin-right: 30px;
+}
+.our-team {
+  display: flex;
+  margin-bottom: 94px;
+}
+.team-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.team-content {
+  padding: 30px;
+}
+
+.team-items {
+  background-color: #fff;
+
+  box-sizing: border-box;
 }
