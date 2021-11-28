@@ -185,9 +185,18 @@ a {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   text-align: center;
-  margin-top: 94px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.work-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 .team h3 {
@@ -210,6 +219,16 @@ a {
   letter-spacing: 0.03em;
 }
 
+.logo-finish {
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
 .button {
   font-family: Roboto;
   font-style: normal;
@@ -278,6 +297,10 @@ a {
   margin-bottom: 25px;
 }
 
+.logo-finish {
+  margin-bottom: 20px;
+}
+
 .nav-conteiner {
   margin-right: 331px;
 }
@@ -295,6 +318,10 @@ a {
   margin-bottom: 30px;
 }
 
+.advantages {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .adv {
   display: flex;
   margin-top: 94px;
@@ -309,7 +336,9 @@ a {
 .h-adv {
   margin-bottom: 10px;
 }
-
+.our-work {
+  margin-bottom: 94px;
+}
 .work-list {
   display: flex;
 }
@@ -319,7 +348,7 @@ a {
 }
 .our-team {
   display: flex;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .team-items:not(:last-child) {
   margin-right: 30px;
@@ -335,6 +364,20 @@ a {
 
 .team-items {
   background-color: #fff;
-
   box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.location {
+  margin-bottom: 9px;
+}
+
+.contakt:not(:last-child) {
+  margin-bottom: 10px;
 }
