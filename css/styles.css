@@ -29,6 +29,18 @@ img {
   max-width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* Portfolio */
 body {
   background-color: var(--white-color);
@@ -38,6 +50,25 @@ body {
 
 footer {
   background-color: var(--footer-color);
+}
+
+.cards-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.card {
+  width: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.conteiner-portfolio {
+  margin-top: 50px;
 }
 
 /* Активное наведение */
@@ -63,6 +94,10 @@ footer {
 
 .button {
   cursor: pointer;
+  padding: 6px 22px;
+}
+.button:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Убираем маркера списка */
@@ -132,8 +167,28 @@ a {
   text-decoration: none;
   color: var(--secondly-text-color);
 }
-.team {
+.section-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-advantages {
+  padding-top: 94px;
+}
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.page-header {
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .nav {
   text-decoration: none;
@@ -186,7 +241,6 @@ a {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .work-title {
@@ -238,23 +292,29 @@ a {
   letter-spacing: 0.03em;
   border: none;
 }
+.conteiner-button {
+  text-align: center;
+}
 
-.portfolio h2 {
+.card h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
-.portfolio p {
+.card p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  color: var(--secondly-text-color);
 }
 .team-items {
   font-family: Roboto;
@@ -263,9 +323,11 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--secondly-text-color);
 }
 
+.card-info {
+  padding: 20px 24px;
+}
 /* ------body-------- */
 
 /* ------header------ */
@@ -274,6 +336,7 @@ a {
   display: flex;
   height: 80px;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .nav-conteiner {
   display: flex;
@@ -322,14 +385,8 @@ a {
   padding-right: 237px;
 }
 
-.advantages {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 .adv {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .adv-items {
   width: 270px;
@@ -352,7 +409,6 @@ a {
 }
 .our-team {
   display: flex;
-  padding-bottom: 94px;
 }
 .team-items:not(:last-child) {
   margin-right: 30px;
