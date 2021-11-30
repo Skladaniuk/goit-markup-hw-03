@@ -62,9 +62,6 @@ footer {
   width: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .conteiner-portfolio {
@@ -327,6 +324,9 @@ a {
 
 .card-info {
   padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 /* ------body-------- */
 
