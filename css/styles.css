@@ -312,10 +312,14 @@ a {
   text-align: center;
 
   background-color: var(--primary-text-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .h-hero {
   margin-bottom: 30px;
+  padding-left: 237px;
+  padding-right: 237px;
 }
 
 .advantages {
