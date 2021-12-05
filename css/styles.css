@@ -221,8 +221,7 @@ a {
   border-radius: 4px;
 }
 .hero button:hover {
-  background-color: #f5f4fa;
-  color: var(--primary-text-color);
+  background-color: #188ce8;
 }
 
 .section-advantages h3 {
@@ -340,7 +339,6 @@ a {
   display: flex;
   height: 80px;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .nav-conteiner {
   display: flex;
@@ -357,6 +355,9 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   margin-right: 93px;
